@@ -124,9 +124,9 @@ Even though the data structure you will implement is up to you, keep the followi
 
 #### `add(name, number, is_listed)`
 - **Description**: This method attempts to add a new entry to the PhoneBook. `name` is the name of the person and `number` is that person's phone number. The `is\_listed` parameter identifies if this entry should be listed or unlisted in the PhoneBook (`true` if listed, `false` if unlisted). Return `true` if the operation was successful, and `false` otherwise. Here are the **requirements** for the add method:
-    - If the person already exists, then the entry cannot be added to the PhoneBook.
-    - If `number` is not in the format `NNN-NNN-NNNN`, the entry cannot be added to the PhoneBook.
-    - A `number` can be added as *unlisted* any number of times, but can only be added as *listed* once. This means that if `number` already exists and is *listed* in the PhoneBook, the new entry can only be added if the entry will be *unlisted*.
+    !- If the person already exists, then the entry cannot be added to the PhoneBook.
+    !- If `number` is not in the format `NNN-NNN-NNNN`, the entry cannot be added to the PhoneBook.
+    !- A `number` can be added as *unlisted* any number of times, but can only be added as *listed* once. This means that if `number` already exists and is *listed* in the PhoneBook, the new entry can only be added if the entry will be *unlisted*.
 
 - **Type**: `(String, String, Bool) -> Bool`
 - **Assumptions**: No phone number will start with 0.
